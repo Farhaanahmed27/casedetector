@@ -1,0 +1,14 @@
+def casedetector(string):
+    upper = 0
+    lower = 0
+    for i in range(len(string)):
+        if (ord(string[i]) > 96 and
+            ord(string[i]) < 123):
+            lower += 1
+        elif (ord(string[i]) >64 and
+              ord(string[i]) <91):
+            upper = upper +1
+    print("total lower case letters in the given string is %s" %lower)
+    print("total upper case letters in the given string is %s" %upper)
+string = "The quick Brow Fox"
+casedetector(string)
